@@ -11,11 +11,14 @@ function setup() {
 }
 
 function draw() {
-  background(0,0,75,1);
+  background(0,0,75,0.1);
   tekenSter(xPositie,yPositie);
+  yPositie++;
+  xPositie=xPositie+5;
+  schaal+=0,05;
 }
 
-function tekenSter(x,y) {
+function tekenSter(x,y,s) {
   push();
   scale(1);
   strokeWeight(2);

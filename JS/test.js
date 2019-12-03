@@ -1,3 +1,7 @@
+var hoogted =
+var diameter =
+
+
 function setup() {
   canvas = createCanvas(450,450);
   background('silver');
@@ -7,8 +11,8 @@ function setup() {
 
 function draw() {
   noStroke();
-  fill('steelblue');
-  ellipse(0,0,800);
   fill('deepskyblue');
-  ellipse(450,450,400);
+  ellipse(450,450,200);
+  fill('black');
+  ellipse(100,100,100);
 }
