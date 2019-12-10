@@ -4,13 +4,13 @@ var afstand;
 function setup() {
   canvas = createCanvas(450,450);
   canvas.parent('processing');
-  textFont("Verdana");
-  textSize(14);
+  textFont("Verdana");                                                                             
+  textSize(14);                                                                        
   noStroke();
   frameRate(50);
 }
-
-function draw() {
+                                                
+function draw() {                                      
   background('lavender');
   fill('black');  
   
@@ -19,7 +19,7 @@ function draw() {
 
   text("Beweeg de muis | x = " + round(mouseX) + " en y = " + round(mouseY),10,20);
   
-  if (mouseX >= width - 30) {
+  if (mouseX >= width - 30, + 30) {
     kleur='red';
   }
   else {
