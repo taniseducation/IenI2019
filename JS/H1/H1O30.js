@@ -1,4 +1,4 @@
-var rij = 0;
+var rij = 9;
 
 function setup() {
   canvas = createCanvas(451,451);

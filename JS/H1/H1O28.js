@@ -22,6 +22,10 @@ function draw() {
   ellipse(0,0,400,50);
   rotate(360 / aantal);
 
+  for (var n=0; n < aantal;n++){
+    ellipse(0,0,400,50);
+    rotate(360 / aantal);
+  }
   
   // gele vulkleur
 
@@ -34,4 +38,10 @@ function draw() {
   if (keyIsDown(RIGHT_ARROW)) {
     aantal++;
   }   
+
+  for (var n=0; n < aantal;n++){
+    rect(0,0,75,75);
+    rotate(360 / aantal);
+  }
+
 }
