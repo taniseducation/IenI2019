@@ -12,10 +12,9 @@ function draw() {
         for (var kolom = 0;kolom < 450;kolom += 50) {
              rect(kolom,rij,50,50);
         }   
-
-        if (rij == 150 && kolom == 300) {
+            if  {s 
             fill('orange');
-        }
+            }
 
     }
 }
