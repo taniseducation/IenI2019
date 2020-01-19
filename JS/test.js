@@ -1,3 +1,6 @@
+var choco = 0;
+var toren = 0;
+
 function setup() {
   canvas = createCanvas(450,450);
   background('silver');
@@ -5,10 +8,14 @@ function setup() {
   //noLoop();
 }
 
+function preload() {
+choco = loadImage("images/choco.jpg");
+toren = loadImage("images/toren.jpg");
+}
+
 function draw() {
-  noStroke();
-  fill('steelblue');
-  ellipse(0,0,800);
-  fill('deepskyblue');
-  ellipse(450,450,400);
+    background(choco);
+    torenX += random(-5,5);
+    torenY += random(-5,5);
+    image(toren,torenX,torenY);
 }

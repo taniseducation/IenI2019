@@ -1,4 +1,4 @@
-var zoomNiveau = 3;
+var zoomNiveau = 0;
 
 function setup() {
   canvas = createCanvas(450,450);
@@ -15,7 +15,7 @@ function draw() {
   rect(0,0,width,30);
   fill('black');  
   text("Druk op een toets | huidig zoomniveau: " + round(10*zoomNiveau) / 10,5,20);
-  if (keyIsPressed == true) {
+  if (mouseIsPressed == true) {
     zoomNiveau += 0.1;
   }
   else {
